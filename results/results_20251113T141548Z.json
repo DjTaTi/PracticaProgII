@@ -1,0 +1,178 @@
+{
+  "timestamp": "2025-11-13T14:15:48.500797Z",
+  "total_score": 9,
+  "max_score": 10,
+  "percent": 90.0,
+  "details": [
+    {
+      "qid": "1.4",
+      "question": "¿Qué es el REPL de Python?",
+      "options": [
+        "Un entorno interactivo que lee, evalúa y muestra resultados",
+        "Un gestor de paquetes",
+        "Un tipo de compilador avanzado",
+        "Un editor de código"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [
+        0
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.70",
+      "question": "¿Qué sucede si ninguna URL de urlpatterns coincide con la petición?",
+      "options": [
+        "Se ejecuta la primera vista por defecto",
+        "Se levanta una TemplateDoesNotExist",
+        "Se redirige siempre a /admin/",
+        "Django devuelve un error 404"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 0
+    },
+    {
+      "qid": "1.51",
+      "question": "¿Cuál es una ventaja del polimorfismo?",
+      "options": [
+        "Evita el uso de herencia",
+        "Aumenta el acoplamiento",
+        "Hace el código más rígido",
+        "Permite tratar objetos distintos de forma uniforme"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [
+        3
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.1",
+      "question": "¿Qué significa que tenga la filosofía de “batteries included”?",
+      "options": [
+        "Que compila todo el código antes de ejecutarlo",
+        "Que no necesita intérprete para ejecutarse",
+        "Que incluye una biblioteca estándar muy amplia lista para usar",
+        "Que solo funciona en sistemas con batería"
+      ],
+      "correct_display": [
+        2
+      ],
+      "chosen": [
+        2
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.17",
+      "question": "¿Cuál es el propósito del método __init__ en una clase de Python?",
+      "options": [
+        "Borrar el objeto de memoria",
+        "Inicializar los atributos cuando se crea el objeto",
+        "Convertir la clase en módulo",
+        "Imprimir el objeto"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.59",
+      "question": "¿Cómo se llama al acto de redefinir un método heredado en la subclase?",
+      "options": [
+        "Overwrite de archivo",
+        "Override (sobrescritura)",
+        "Overload",
+        "Composición"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.22",
+      "question": "¿Qué es una instancia en POO?",
+      "options": [
+        "Una función especial",
+        "Un atributo",
+        "Un objeto concreto creado a partir de una clase",
+        "Un método"
+      ],
+      "correct_display": [
+        2
+      ],
+      "chosen": [
+        2
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.47",
+      "question": "¿Cuál de estas frases describe mejor el Duck Typing?",
+      "options": [
+        "“Si se comporta como pato, lo trato como pato”",
+        "“Si compila en C y en Python, es válido”",
+        "“Si implementa la misma interfaz formal, es válida”",
+        "“Si hereda de la misma clase, es válida”"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [
+        0
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.23",
+      "question": "¿Cuál de estos códigos crea una instancia de la clase Persona? class Persona:\\ndef  __init__(self, nombre): self.nombre = nombre",
+      "options": [
+        "new Persona(\"Ana\")",
+        "self = Persona",
+        "Persona = (\"Ana\")",
+        "p = Persona(\"Ana\")"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [
+        3
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.32",
+      "question": "En POO, cuando decimos que “los atributos viven en los objetos”, ¿a qué nos referimos?",
+      "options": [
+        "Que pertenecen al intérprete",
+        "Que son de solo lectura",
+        "Que son variables globales",
+        "Que están ligados a cada instancia concreta"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [
+        3
+      ],
+      "score": 1
+    }
+  ]
+}

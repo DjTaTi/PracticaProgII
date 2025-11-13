@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Cuestionario - Debug</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    .question { margin-bottom: 18px; padding: 10px; border-bottom: 1px solid #ddd; }
+    .qtext { font-weight: bold; }
+    .opts { margin-top: 6px; }
+    .submit { margin-top: 16px; }
+    .small { font-size: 0.9em; color: #666; }
+    .debug { color: red; font-size: 0.8em; }
+  </style>
+</head>
+<body>
+  <h1>Cuestionario - Debug Version</h1>
+  <p class="small">Modo Debug - Se muestran las primeras 3 preguntas</p>
+  
+  <form method="post" action="{{ url_for('submit') }}">
+    {% for q in questions[:3] %}
+      <div class="question">
+        <div class="qtext">{{ loop.index }}. {{ q.question }}</div>
+        <div class="debug">Question ID: {{ q.id }}, Input name: q_{{ q.id }}, Is multi: {{ (q.correct_display | length) > 1 }}</div>
+        <div class="opts">
+          {% set is_multi = (q.correct_display | length) > 1 %}
+          {% set safe_id = q.id | replace('.', '_') %}
+          {% for opt in q.options %}
+            {% set opt_idx = loop.index0 %}
+            {% set input_name = "q_" ~ q.id %}
+            <div>
+              {% if is_multi %}
+                <input type="checkbox"
+                       id="q{{ safe_id }}_{{ opt_idx }}"
+                       name="{{ input_name }}"
+                       value="{{ opt_idx }}">
+              {% else %}
+                <input type="radio"
+                       id="q{{ safe_id }}_{{ opt_idx }}"
+                       name="{{ input_name }}"
+                       value="{{ opt_idx }}">
+              {% endif %}
+              <label for="q{{ safe_id }}_{{ opt_idx }}">
+                {{ 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[opt_idx] }}. {{ opt }}
+              </label>
+              <span class="debug">(id: q{{ safe_id }}_{{ opt_idx }}, name: {{ input_name }}, value: {{ opt_idx }})</span>
+            </div>
+          {% endfor %}
+        </div>
+        <input type="hidden" name="correct_{{ q.id }}" value="{{ q.correct_display | join(',') }}">
+      </div>
+    {% endfor %}
+    
+    <div class="submit">
+      <button type="submit">Enviar respuestas y calificar</button>
+    </div>
+  </form>
+</body>
+</html>

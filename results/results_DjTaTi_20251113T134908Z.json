@@ -1,0 +1,159 @@
+{
+  "timestamp": "2025-11-13T13:49:08.486430Z",
+  "user": "DjTaTi",
+  "total_score": 0,
+  "max_score": 10,
+  "percent": 0.0,
+  "details": [
+    {
+      "qid": "1.20",
+      "question": "¿Cuál de estos es un pilar de la POO?",
+      "options": [
+        "Polimorfismo",
+        "Recursión",
+        "Gestión de memoria automática",
+        "Tipado dinámico"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.40",
+      "question": "¿Qué tipo de colección garantiza que no haya elementos duplicados?",
+      "options": [
+        "dict",
+        "tuple",
+        "set",
+        "list"
+      ],
+      "correct_display": [
+        2
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.59",
+      "question": "¿Cómo se llama al acto de redefinir un método heredado en la subclase?",
+      "options": [
+        "Overwrite de archivo",
+        "Overload",
+        "Composición",
+        "Override (sobrescritura)"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.34",
+      "question": "¿Cuál de estas NO es una colección básica de Python?",
+      "options": [
+        "record",
+        "list",
+        "dict",
+        "set"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.38",
+      "question": "¿Qué estructura es inmutable?",
+      "options": [
+        "tuple",
+        "set",
+        "dict",
+        "list"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.11",
+      "question": "¿Qué tipo de dato devuelve siempre input() antes de convertirlo?",
+      "options": [
+        "str",
+        "int",
+        "float",
+        "bool"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.4",
+      "question": "¿Qué es el REPL de Python?",
+      "options": [
+        "Un entorno interactivo que lee, evalúa y muestra resultados",
+        "Un editor de código",
+        "Un gestor de paquetes",
+        "Un tipo de compilador avanzado"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.6",
+      "question": "¿Qué hace la función input() en Python?",
+      "options": [
+        "Ejecuta una expresión ingresada por el usuario",
+        "Lee un número entero desde teclado",
+        "Lee texto desde teclado y devuelve una cadena",
+        "Lee únicamente valores booleanos"
+      ],
+      "correct_display": [
+        2
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.52",
+      "question": "En la comparativa Herencia / Composición / Polimorfismo, ¿qué relación suele describir la herencia?",
+      "options": [
+        "“es-un”",
+        "“tiene-un”",
+        "“depende-de”",
+        "“usa-un”"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [],
+      "score": 0
+    },
+    {
+      "qid": "1.28",
+      "question": "¿Qué tipo de dato se usa para representar una colección de objetos como por ejemplo, varios vuelos?",
+      "options": [
+        "list",
+        "set",
+        "tuple",
+        "dict"
+      ],
+      "correct_display": [
+        0
+      ],
+      "chosen": [],
+      "score": 0
+    }
+  ]
+}

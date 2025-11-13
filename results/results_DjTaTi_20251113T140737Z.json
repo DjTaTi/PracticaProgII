@@ -1,0 +1,179 @@
+{
+  "timestamp": "2025-11-13T14:07:37.868207Z",
+  "user": "DjTaTi",
+  "total_score": 9,
+  "max_score": 10,
+  "percent": 90.0,
+  "details": [
+    {
+      "qid": "1.19",
+      "question": "¿Qué hace típicamente el método especial __str__?",
+      "options": [
+        "Borra los atributos del objeto",
+        "Define el constructor",
+        "Convierte el objeto en lista",
+        "Devuelve una representación legible del objeto como texto"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [
+        3
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.6",
+      "question": "¿Qué hace la función input() en Python?",
+      "options": [
+        "Lee un número entero desde teclado",
+        "Lee texto desde teclado y devuelve una cadena",
+        "Ejecuta una expresión ingresada por el usuario",
+        "Lee únicamente valores booleanos"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        2
+      ],
+      "score": 0
+    },
+    {
+      "qid": "1.64",
+      "question": "¿Qué indica ROOT_URLCONF en settings.py?",
+      "options": [
+        "El módulo donde está la configuración de base de datos",
+        "El módulo urls.py principal del proyecto",
+        "El nombre del proyecto",
+        "El archivo de plantillas base"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.71",
+      "question": "¿Qué son los middlewares?",
+      "options": [
+        "Modelos que se ejecutan antes de guardar",
+        "Clases/callables que envuelven el ciclo request/response",
+        "Bibliotecas externas",
+        "Plantillas HTML especiales"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.23",
+      "question": "¿Cuál de estos códigos crea una instancia de la clase Persona? class Persona:\\ndef  __init__(self, nombre): self.nombre = nombre",
+      "options": [
+        "self = Persona",
+        "p = Persona(\"Ana\")",
+        "Persona = (\"Ana\")",
+        "new Persona(\"Ana\")"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.38",
+      "question": "¿Qué estructura es inmutable?",
+      "options": [
+        "list",
+        "tuple",
+        "set",
+        "dict"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.37",
+      "question": "Dado texto = \"programación\", ¿qué devuelve texto.upper()?",
+      "options": [
+        "\"PROGRAMACION\" (sin tilde)",
+        "\"programación\"",
+        "\"PROGRAMACIÓN\"",
+        "\"Programación\""
+      ],
+      "correct_display": [
+        2
+      ],
+      "chosen": [
+        2
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.32",
+      "question": "En POO, cuando decimos que “los atributos viven en los objetos”, ¿a qué nos referimos?",
+      "options": [
+        "Que pertenecen al intérprete",
+        "Que están ligados a cada instancia concreta",
+        "Que son variables globales",
+        "Que son de solo lectura"
+      ],
+      "correct_display": [
+        1
+      ],
+      "chosen": [
+        1
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.51",
+      "question": "¿Cuál es una ventaja del polimorfismo?",
+      "options": [
+        "Hace el código más rígido",
+        "Evita el uso de herencia",
+        "Aumenta el acoplamiento",
+        "Permite tratar objetos distintos de forma uniforme"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [
+        3
+      ],
+      "score": 1
+    },
+    {
+      "qid": "1.34",
+      "question": "¿Cuál de estas NO es una colección básica de Python?",
+      "options": [
+        "set",
+        "dict",
+        "list",
+        "record"
+      ],
+      "correct_display": [
+        3
+      ],
+      "chosen": [
+        3
+      ],
+      "score": 1
+    }
+  ]
+}

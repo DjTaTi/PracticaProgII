@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Resultado</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    .good { color: green; }
+    .bad { color: #a00; }
+    .detail { margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Resultado</h1>
+  <p>Puntuación total: <strong>{{ total }}</strong> / {{ max_score }} ({{ '%.1f'|format(percent) }}%)</p>
+  <p>Archivo de resultados guardado: <a href="{{ url_for('get_result_file', filename=result_file) }}">{{ result_file }}</a></p>
+
+  <h2>Detalle</h2>
+  {% for d in details %}
+    <div class="detail">
+      <div><strong>{{ loop.index }}. {{ d.question }}</strong></div>
+      <div>Tu respuesta: 
+        {% if d.chosen|length == 0 %}
+          <em>(sin respuesta)</em>
+        {% else %}
+          {{ d.chosen | join(', ') }}
+        {% endif %}
+      </div>
+      <div>Correcta(s): {{ d.correct_display | join(', ') }}</div>
+      <div>Estado: {% if d.score == 1 %}<span class="good">Correcta</span>{% else %}<span class="bad">Incorrecta</span>{% endif %}</div>
+    </div>
+  {% endfor %}
+</body>
+</html>

@@ -1,0 +1,794 @@
+[
+  {
+    "id": "1.1",
+    "question": "¿Qué significa que tenga la filosofía de “batteries included”?",
+    "options": [
+      "Que compila todo el código antes de ejecutarlo",
+      "Que incluye una biblioteca estándar muy amplia lista para usar",
+      "Que solo funciona en sistemas con batería",
+      "Que no necesita intérprete para ejecutarse"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.2",
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor el tipado de Python?",
+    "options": [
+      "Débil y estático",
+      "Fuerte y estático",
+      "Débil y dinámico",
+      "Fuerte y dinámico"
+    ],
+    "answer": [3]
+  },
+  {
+    "id": "1.3",
+    "question": "¿Qué comando se usa típicamente en Windows para verificar la versión de Python en la terminal?",
+    "options": [
+      "--check",
+      "py -info",
+      "--version",
+      "pip version"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.4",
+    "question": "¿Qué es el REPL de Python?",
+    "options": [
+      "Un tipo de compilador avanzado",
+      "Un entorno interactivo que lee, evalúa y muestra resultados",
+      "Un gestor de paquetes",
+      "Un editor de código"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.5",
+    "question": "¿Qué recomendación hace PEP 8 respecto a la indentación?",
+    "options": [
+      "Usar siempre tabuladores",
+      "Usar 2 espacios por nivel",
+      "Usar 4 espacios por nivel",
+      "No usar indentación"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.6",
+    "question": "¿Qué hace la función input() en Python?",
+    "options": [
+      "Lee un número entero desde teclado",
+      "Lee texto desde teclado y devuelve una cadena",
+      "Ejecuta una expresión ingresada por el usuario",
+      "Lee únicamente valores booleanos"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.7",
+    "question": "¿Qué sucede si llamamos a int() con una cadena que no representa un entero válido?",
+    "options": [
+      "Devuelve 0",
+      "Devuelve None",
+      "Lanza un ValueError",
+      "Lanza un SyntaxError"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.8",
+    "question": "¿Cuál de estas opciones es una buena razón para evitar eval() con datos de usuario?",
+    "options": [
+      "Porque hace el programa más lento",
+      "Porque solo funciona en Linux",
+      "Porque puede ejecutar código arbitrario y es inseguro",
+      "Porque no puede evaluar expresiones matemáticas"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.9",
+    "question": "¿Qué hace el parámetro end=\" \" en print()?",
+    "options": [
+      "Cambia el color del texto",
+      "Evita imprimir cualquier cosa",
+      "Reemplaza el salto de línea final por un espacio",
+      "Imprime el texto en mayúsculas"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.10",
+    "question": "¿qué función se recomienda usar para formatear la salida?",
+    "options": [
+      "format() sin más",
+      "Concatenación con +",
+      "print(f\"...\")",
+      "repr()"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.11",
+    "question": "¿Qué tipo de dato devuelve siempre input() antes de convertirlo?",
+    "options": [
+      "int",
+      "float",
+      "str",
+      "bool"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.12",
+    "question": "¿qué operador se usa para saber si un número es par?",
+    "options": [
+      "+",
+      "//",
+      "%",
+      "=="
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.13",
+    "question": "Para imprimir un número con 2 decimales en un f-string, ¿qué formato es correcto?",
+    "options": [
+      "{precio:2}",
+      "{precio:.2f}",
+      "{precio:%2}",
+      "{precio:#.2}"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.14",
+    "question": "¿Cuál de las siguientes es una buena práctica al leer datos numéricos del usuario?",
+    "options": [
+      "Usar siempre eval(input())",
+      "Usar int(input()) o float(input()) según corresponda",
+      "No validar nunca la entrada",
+      "Convertir todo a cadena con str()"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.15",
+    "question": "¿Qué hace este código? for i in range(5, 21, 3): print(i, end=\" \")",
+    "options": [
+      "Imprime del 5 al 21 de 1 en 1",
+      "Imprime del 5 al 20 de 3 en 3",
+      "Imprime del 3 al 20 de 5 en 5",
+      "Imprime del 5 al 23 de 3 en 3"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.16",
+    "question": "En POO, ¿qué es una clase?",
+    "options": [
+      "Un solo objeto concreto",
+      "Un módulo de Python",
+      "Un plano o plantilla para crear objetos",
+      "Una función especial del intérprete"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.17",
+    "question": "¿Cuál es el propósito del método __init__ en una clase de Python?",
+    "options": [
+      "Imprimir el objeto",
+      "Inicializar los atributos cuando se crea el objeto",
+      "Borrar el objeto de memoria",
+      "Convertir la clase en módulo"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.18",
+    "question": "¿Qué representa self dentro de los métodos de una clase?",
+    "options": [
+      "Una palabra reservada sin uso",
+      "Al módulo actual",
+      "A la propia instancia (este objeto)",
+      "A la clase base"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.19",
+    "question": "¿Qué hace típicamente el método especial __str__?",
+    "options": [
+      "Define el constructor",
+      "Devuelve una representación legible del objeto como texto",
+      "Borra los atributos del objeto",
+      "Convierte el objeto en lista"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.20",
+    "question": "¿Cuál de estos es un pilar de la POO?",
+    "options": [
+      "Recursión",
+      "Polimorfismo",
+      "Tipado dinámico",
+      "Gestión de memoria automática"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.21",
+    "question": "En una clase Auto, ¿qué hace la línea self.color = color?",
+    "options": [
+      "Declara una variable global",
+      "Crea un atributo de instancia y le asigna el valor recibido",
+      "Llama a un método privado",
+      "Reinicia el objeto"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.22",
+    "question": "¿Qué es una instancia en POO?",
+    "options": [
+      "Un atributo",
+      "Un método",
+      "Un objeto concreto creado a partir de una clase",
+      "Una función especial"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.23",
+    "question": "¿Cuál de estos códigos crea una instancia de la clase Persona? class Persona:\\ndef  __init__(self, nombre): self.nombre = nombre",
+    "options": [
+      "Persona = (\"Ana\")",
+      "p = Persona(\"Ana\")",
+      "self = Persona",
+      "new Persona(\"Ana\")"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.24",
+    "question": "¿Qué ventaja da usar __repr__ o __str__ bien definidos?",
+    "options": [
+      "Reduce el tamaño del ejecutable",
+      "Facilita la depuración mostrando información útil del objeto",
+      "Hace que el código corra más rápido",
+      "Evita errores de sintaxis"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.25",
+    "question": "¿Qué pilar de la POO se relaciona con “ocultar detalles internos y exponer solo lo necesario”?",
+    "options": [
+      "Herencia",
+      "Encapsulamiento",
+      "Polimorfismo",
+      "Tipado estático"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.26",
+    "question": "¿Cuál es la forma recomendada de nombrar clases en Python?",
+    "options": [
+      "snake_case",
+      "kebab-case",
+      "PascalCase (CadaPalabraConMayúscula)",
+      "MAYUSCULAS"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.27",
+    "question": "¿Qué hace vars(objeto)?",
+    "options": [
+      "Borra todos los atributos",
+      "Devuelve un diccionario con los atributos de instancia",
+      "Convierte el objeto en lista",
+      "Crea una nueva instancia"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.28",
+    "question": "¿Qué tipo de dato se usa para representar una colección de objetos como por ejemplo, varios vuelos?",
+    "options": [
+      "dict",
+      "set",
+      "tuple",
+      "list"
+    ],
+    "answer": [3]
+  },
+  {
+    "id": "1.29",
+    "question": "¿Cuál es el objetivo principal de los métodos get_ y set_ en las clases?",
+    "options": [
+      "Administrar memoria",
+      "Leer y escribir atributos de forma controlada",
+      "Compilar el código",
+      "Manejar excepciones"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.30",
+    "question": "En el constructor __init__(self, titulo, autor, anio), ¿qué representan titulo, autor y anio?",
+    "options": [
+      "Atributos globales",
+      "Parámetros que se pasan al crear la instancia",
+      "Métodos de la clase",
+      "Constantes del módulo"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.31",
+    "question": "¿Qué significa que las listas sean “mutables”?",
+    "options": [
+      "Que no se pueden modificar",
+      "Que solo se pueden leer",
+      "Que se pueden agregar, quitar o cambiar elementos",
+      "Que solo aceptan enteros"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.32",
+    "question": "En POO, cuando decimos que “los atributos viven en los objetos”, ¿a qué nos referimos?",
+    "options": [
+      "Que son variables globales",
+      "Que están ligados a cada instancia concreta",
+      "Que pertenecen al intérprete",
+      "Que son de solo lectura"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.33",
+    "question": "¿Cuál de estas afirmaciones describe mejor el SRP (Single Responsibility Principle)?",
+    "options": [
+      "Cada módulo debe tener muchos motivos para cambiar",
+      "Cada función o clase debe tener una única responsabilidad clara",
+      "Se deben mezclar varias responsabilidades para ganar rendimiento",
+      "Solo aplica a bases de datos"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.34",
+    "question": "¿Cuál de estas NO es una colección básica de Python?",
+    "options": [
+      "list",
+      "dict",
+      "record",
+      "set"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.35",
+    "question": "¿Qué característica tienen las listas en Python?",
+    "options": [
+      "No tienen orden",
+      "No permiten duplicados",
+      "Son inmutables",
+      "Son mutables"
+    ],
+    "answer": [3]
+  },
+  {
+    "id": "1.36",
+    "question": "¿Cuál de estas operaciones agrega un elemento al final de una lista?",
+    "options": [
+      "append()",
+      "insert()",
+      "extend()",
+      "pop()"
+    ],
+    "answer": [0]
+  },
+  {
+    "id": "1.37",
+    "question": "Dado texto = \"programación\", ¿qué devuelve texto.upper()?",
+    "options": [
+      "\"programación\"",
+      "\"PROGRAMACIÓN\"",
+      "\"Programación\"",
+      "\"PROGRAMACION\" (sin tilde)"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.38",
+    "question": "¿Qué estructura es inmutable?",
+    "options": [
+      "list",
+      "set",
+      "dict",
+      "tuple"
+    ],
+    "answer": [3]
+  },
+  {
+    "id": "1.39",
+    "question": "¿Qué hace numeros.sort() sobre una lista de enteros?",
+    "options": [
+      "Invierte el orden actual",
+      "Ordena de menor a mayor",
+      "Elimina duplicados",
+      "Crea una nueva lista ordenada sin modificar la original"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.40",
+    "question": "¿Qué tipo de colección garantiza que no haya elementos duplicados?",
+    "options": [
+      "list",
+      "tuple",
+      "set",
+      "dict"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.41",
+    "question": "En un diccionario persona = {\"nombre\": \"Ana\", \"edad\": 25}, ¿qué hace persona.get(\"dni\", \"N/D\")?",
+    "options": [
+      "Lanza error porque la clave no existe",
+      "Devuelve None siempre",
+      "Devuelve \"N/D\"",
+      "Agrega la clave \"dni\" con valor \"N/D\" sin devolver nada"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.42",
+    "question": "¿Qué devuelve persona.keys() en un diccionario?",
+    "options": [
+      "Una lista con los valores",
+      "Un objeto iterable con las claves",
+      "Un conjunto con claves y valores",
+      "El número de elementos"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.43",
+    "question": "¿Qué tipo de datos se pueden guardar en colecciones en Python?",
+    "options": [
+      "Solo enteros y cadenas",
+      "Solo tipos primitivos",
+      "Cualquier tipo de dato, incluso objetos y otras colecciones",
+      "Solo listas y diccionarios"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.44",
+    "question": "¿Qué significa polimorfismo en POO?",
+    "options": [
+      "Un objeto puede tener muchos atributos",
+      "Un mismo mensaje puede producir distintos comportamientos según el objeto",
+      "Una clase puede tener muchos padres",
+      "Poder compilar en varios sistemas operativos"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.45",
+    "question": "¿Qué tipo de polimorfismo aparece cuando una subclase redefine un método del padre?",
+    "options": [
+      "Duck typing",
+      "Sobrecarga",
+      "Sobreescritura (override)",
+      "Composición"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.46",
+    "question": "En Python, la “sobrecarga de métodos” (overload) se suele simular usando:",
+    "options": [
+      "Múltiples __init__",
+      "Métodos privados",
+      "Parámetros opcionales como *args y kwargs",
+      "Propiedades (@property)"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.47",
+    "question": "¿Cuál de estas frases describe mejor el Duck Typing?",
+    "options": [
+      "“Si hereda de la misma clase, es válida”",
+      "“Si implementa la misma interfaz formal, es válida”",
+      "“Si compila en C y en Python, es válido”",
+      "“Si se comporta como pato, lo trato como pato”"
+    ],
+    "answer": [3]
+  },
+  {
+    "id": "1.48",
+    "question": "¿Qué muestra Clase.mro() en Python?",
+    "options": [
+      "La memoria ocupada por los objetos",
+      "El orden de resolución de métodos",
+      "Los métodos privados de la clase",
+      "La documentación de la clase"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.49",
+    "question": "¿Qué relación de clases requiere el polimorfismo por sobreescritura (override)?",
+    "options": [
+      "Composición",
+      "No requiere relación",
+      "Herencia (padre–hijo)",
+      "Asociación débil"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.50",
+    "question": "En Duck Typing, si un objeto no tiene el método esperado al ejecutarse el programa:",
+    "options": [
+      "Se corrige automáticamente",
+      "Se lanza un error en tiempo de ejecución",
+      "Se ignora la llamada",
+      "Se crea el método dinámicamente"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.51",
+    "question": "¿Cuál es una ventaja del polimorfismo?",
+    "options": [
+      "Aumenta el acoplamiento",
+      "Hace el código más rígido",
+      "Permite tratar objetos distintos de forma uniforme",
+      "Evita el uso de herencia"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.52",
+    "question": "En la comparativa Herencia / Composición / Polimorfismo, ¿qué relación suele describir la herencia?",
+    "options": [
+      "“tiene-un”",
+      "“es-un”",
+      "“usa-un”",
+      "“depende-de”"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.53",
+    "question": "¿Qué tipo de polimorfismo NO requiere herencia, solo que el objeto tenga el método correcto?",
+    "options": [
+      "Sobrecarga",
+      "Sobreescritura",
+      "Duck Typing",
+      "MRO"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.54",
+    "question": "¿Qué es la herencia en POO?",
+    "options": [
+      "Un mecanismo para copiar archivos",
+      "Una clase hija que reutiliza y extiende a una clase padre",
+      "Un tipo de variable local",
+      "Un patrón de diseño para bases de datos"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.55",
+    "question": "¿Cuál de estas es una ventaja de la herencia?",
+    "options": [
+      "Aumentar la duplicación de código",
+      "Evitar el uso de métodos",
+      "Reutilización de código común en la superclase",
+      "Eliminar la necesidad de probar el código"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.56",
+    "question": "¿Qué palabra clave se usa en Python para indicar que una clase hereda de otra?",
+    "options": [
+      "extends",
+      "inherits",
+      "super",
+      "Se coloca la clase padre entre paréntesis en la definición de la clase hija"
+    ],
+    "answer": [3]
+  },
+  {
+    "id": "1.57",
+    "question": "¿Qué hace super().__init__(...) en una subclase?",
+    "options": [
+      "Llama al constructor de cualquier clase",
+      "Llama al constructor de la clase padre",
+      "Crea un objeto anónimo",
+      "Cierra la aplicación"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.58",
+    "question": "¿Qué significa que una subclase defina pass en su cuerpo (sin agregar nada)?",
+    "options": [
+      "La subclase no existe",
+      "La subclase hereda todo del padre sin cambios",
+      "La subclase no puede ser instanciada",
+      "Se destruye la superclase"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.59",
+    "question": "¿Cómo se llama al acto de redefinir un método heredado en la subclase?",
+    "options": [
+      "Overload",
+      "Override (sobrescritura)",
+      "Overwrite de archivo",
+      "Composición"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.60",
+    "question": "¿Qué relación describe mejor la composición?",
+    "options": [
+      "“es-un”",
+      "“hereda-de”",
+      "“tiene-un”",
+      "“usa-como”"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.61",
+    "question": "En el ejemplo de herencia múltiple de Persona y Académico, ¿qué problema ayuda a resolver?",
+    "options": [
+      "Reducir el número de atributos",
+      "Compartir varios atributos/métodos comunes entre distintas subclases",
+      "Eliminar la necesidad de constructores",
+      "Evitar el uso de objetos"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.62",
+    "question": "¿Qué riesgo respecto a la herencia podemos sufrir?",
+    "options": [
+      "Es imposible de depurar",
+      "No funciona en Python",
+      "Jerarquías muy rígidas o profundas",
+      "No permite polimorfismo"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.63",
+    "question": "¿Qué variable de entorno indica a Django qué archivo de configuración usar?",
+    "options": [
+      "DJANGO_URLCONF",
+      "DJANGO_SETTINGS_MODULE",
+      "ROOT_URLCONF",
+      "DJANGO_CONFIG_FILE"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.64",
+    "question": "¿Qué indica ROOT_URLCONF en settings.py?",
+    "options": [
+      "El nombre del proyecto",
+      "El módulo donde está la configuración de base de datos",
+      "El módulo urls.py principal del proyecto",
+      "El archivo de plantillas base"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.65",
+    "question": "¿Qué es una vista (view) en Django?",
+    "options": [
+      "Un archivo HTML",
+      "Un callable que recibe request y devuelve una HttpResponse",
+      "Un modelo de base de datos",
+      "Un middleware"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.66",
+    "question": "¿Qué función se usa típicamente para devolver una plantilla renderizada?",
+    "options": [
+      "HttpResponse()",
+      "render_template()",
+      "render() de django.shortcuts",
+      "TemplateResponse()"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.67",
+    "question": "¿Qué hace include() en urls.py?",
+    "options": [
+      "Importa settings.py",
+      "Sirve archivos estáticos",
+      "Delegar parte de la ruta a otro archivo urls.py de una app",
+      "Crea automáticamente vistas genéricas"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.68",
+    "question": "En la configuración de plantillas, ¿qué efecto tiene APP_DIRS = True?",
+    "options": [
+      "Desactiva las plantillas globales",
+      "Hace que Django busque plantillas en templates/ dentro de cada app",
+      "Obliga a usar solo plantillas globales",
+      "Desactiva el cache de plantillas"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.69",
+    "question": "¿Dónde suele apuntar TEMPLATES[\"DIRS\"] en un proyecto típico?",
+    "options": [
+      "A la carpeta static/",
+      "A la carpeta media/",
+      "A una carpeta global templates/ en la raíz del proyecto",
+      "A la carpeta migrations/"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.70",
+    "question": "¿Qué sucede si ninguna URL de urlpatterns coincide con la petición?",
+    "options": [
+      "Se redirige siempre a /admin/",
+      "Se levanta una TemplateDoesNotExist",
+      "Django devuelve un error 404",
+      "Se ejecuta la primera vista por defecto"
+    ],
+    "answer": [2]
+  },
+  {
+    "id": "1.71",
+    "question": "¿Qué son los middlewares?",
+    "options": [
+      "Bibliotecas externas",
+      "Clases/callables que envuelven el ciclo request/response",
+      "Plantillas HTML especiales",
+      "Modelos que se ejecutan antes de guardar"
+    ],
+    "answer": [1]
+  },
+  {
+    "id": "1.72",
+    "question": "¿Para qué sirve usar namespace y app_name en las URLs?",
+    "options": [
+      "Para habilitar la caché de URLs",
+      "Para configurar la base de datos",
+      "Para evitar colisiones de nombres de rutas y poder usar reverse/{% url %} de forma clara",
+      "Para generar automáticamente plantillas"
+    ],
+    "answer": [2]
+  }
+]
