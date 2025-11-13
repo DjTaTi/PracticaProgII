@@ -16,11 +16,35 @@
     .legend { margin-bottom: 12px; }
     .disabled-label { color: #333; }
     input[type="radio"][disabled], input[type="checkbox"][disabled] { cursor: default; }
+    
+    /* Estilos para validación */
+    .question-error { 
+      border-left: 4px solid #dc3545; 
+      background-color: #f8d7da; 
+    }
+    .error-message {
+      color: #dc3545;
+      font-size: 0.9em;
+      margin-top: 8px;
+      padding: 8px;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      display: none;
+    }
+    .submit-disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
   <h1>Practica Parcial Programacion II - TUP</h1>
   <p class="small">Se muestran {{ questions|length }} preguntas seleccionadas al azar.</p>
+  
+  <div id="validation-error" class="error-message">
+    <strong>¡Atención!</strong> Debes responder todas las preguntas antes de enviar el cuestionario.
+  </div>
 
   {% if review and summary %}
     <div class="legend">
@@ -30,7 +54,7 @@
     </div>
   {% endif %}
 
-  <form method="post" action="{{ url_for('submit') }}">
+  <form id="quiz-form" method="post" action="{{ url_for('submit') }}">>
     {% for q in questions %}
       <div class="question">
         <div class="qtext">{{ loop.index }}. {{ q.question }}</div>
@@ -97,5 +121,77 @@
       </div>
     {% endif %}
   </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('quiz-form');
+      const errorMessage = document.getElementById('validation-error');
+      
+      if (form) {
+        form.addEventListener('submit', function(event) {
+          // Solo validar si no estamos en modo review
+          {% if not review %}
+          if (!validateAllQuestionsAnswered()) {
+            event.preventDefault();
+            showValidationError();
+            return false;
+          }
+          {% endif %}
+        });
+      }
+
+      function validateAllQuestionsAnswered() {
+        const questions = document.querySelectorAll('.question');
+        let allAnswered = true;
+        
+        questions.forEach(function(questionDiv, index) {
+          const inputs = questionDiv.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+          const questionId = inputs.length > 0 ? inputs[0].name : null;
+          
+          if (questionId) {
+            const answeredInputs = questionDiv.querySelectorAll(`input[name="${questionId}"]:checked`);
+            
+            // Remover clase de error primero
+            questionDiv.classList.remove('question-error');
+            
+            if (answeredInputs.length === 0) {
+              questionDiv.classList.add('question-error');
+              allAnswered = false;
+            }
+          }
+        });
+        
+        return allAnswered;
+      }
+
+      function showValidationError() {
+        errorMessage.style.display = 'block';
+        // Scroll al mensaje de error
+        errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Ocultar el mensaje después de 5 segundos
+        setTimeout(function() {
+          errorMessage.style.display = 'none';
+        }, 5000);
+      }
+
+      // Validación en tiempo real - opcional
+      const inputs = document.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+      inputs.forEach(function(input) {
+        input.addEventListener('change', function() {
+          // Remover error de la pregunta actual cuando se selecciona una respuesta
+          const questionDiv = this.closest('.question');
+          if (questionDiv) {
+            questionDiv.classList.remove('question-error');
+          }
+          
+          // Ocultar mensaje de error si todas las preguntas están respondidas
+          if (validateAllQuestionsAnswered()) {
+            errorMessage.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
